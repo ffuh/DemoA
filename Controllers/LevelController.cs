@@ -63,7 +63,8 @@ namespace DemoA.Controllers
 
         public string Of(string _id)
         {
-            if (_LevelS.ContainsKey(_id.ToLower()))
+            _id = _id.ToLower();
+            if (_LevelS.ContainsKey(_id))
                 return _LevelS[_id].ToString();
             else
                 return "";

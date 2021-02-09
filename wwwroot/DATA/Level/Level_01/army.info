@@ -1,7 +1,2 @@
-id=1
-name=aname
-desc=dasdasddesc
-speed=4
-duration=3
-count=5
-factor=20;20;30;10;5;
+id	name	desc	property
+1	111	1111	hp=122;speed=4

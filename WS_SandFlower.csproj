@@ -12,10 +12,10 @@
 
   <ItemGroup>
     <Reference Include="NL">
-      <HintPath>E:\_DEV\__Lib\NL.dll</HintPath>
+      <HintPath>..\..\..\___NL\NL.dll</HintPath>
     </Reference>
     <Reference Include="NLWeb">
-      <HintPath>E:\_DEV\__Lib\NLWeb.dll</HintPath>
+      <HintPath>..\..\..\___NL\NLWeb.dll</HintPath>
     </Reference>
   </ItemGroup>
 
