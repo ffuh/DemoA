@@ -7,6 +7,24 @@ namespace NL.CCOMM
 {
     public static  class CComm
     {
+        public static NLIni LoadINIFromFile(string _filepath, bool  _localpath=true )
+        {
+            if(_localpath)
+                _filepath = Webapp._ENV.WebRootPath + "//" + _filepath;
+
+            string _lines = ReadDataFile(_filepath);
+
+            return new NLIni(_lines, '\n');
+        }
+        public static NLTable LoadTableFromFile(string _filepath ,bool _localpath = true)
+        {
+            if (_localpath)
+                _filepath = Webapp._ENV.WebRootPath + "//" + _filepath;
+
+            string _lines = ReadDataFile(_filepath);
+
+            return new NLTable(_lines, '\n');
+        }
         public static string ReadDataFile(string _filepath)
         {
             if (System.IO.File.Exists(_filepath))
